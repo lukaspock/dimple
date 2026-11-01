@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0085910675202C5A727AD966 /* ModuleRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F262566E14436B29B6D4C /* ModuleRegistry.swift */; };
+		045F87F43B502C9443EF4BE9 /* NotchShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8BFB0B788C4B36BAA19E7D /* NotchShape.swift */; };
+		15F7E2CA4C59D374E1BF08D8 /* NotchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194D570163969EA0117B21C /* NotchRootView.swift */; };
+		1BE55FC060465F8AF31AAC1E /* SpotifyViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E52FE44FD9F0ED7CE9157 /* SpotifyViews.swift */; };
+		246765F2313C3EFFDFE06555 /* ArtworkColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AE324F16C1D3B1F6259F26 /* ArtworkColor.swift */; };
+		24BC0814F65576CC843810B3 /* NowPlayingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043856011554859DA1F0A723 /* NowPlayingViews.swift */; };
+		2D532556CE3B2EC07469A52B /* mediaremote-adapter.pl in Resources */ = {isa = PBXBuildFile; fileRef = 1B6C58EA3D10C830D197CE21 /* mediaremote-adapter.pl */; };
+		351738D11F4B26E921B16798 /* CalendarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C524929A7542DD93D4D1F69 /* CalendarViews.swift */; };
+		396F8283E16FEC8D6DB8EB35 /* NowPlayingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7FB5D27200290148BD6E82 /* NowPlayingModule.swift */; };
+		4E3F15C84C1079A831409128 /* CalendarModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7454E53D896A817BD6A2BBE2 /* CalendarModule.swift */; };
+		50AA6EA67F605F090F4A80FA /* NotchyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F13CDC195ACE550AB8EF02 /* NotchyApp.swift */; };
+		5957A6B751AB032EA3ADC3FA /* NotchyTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C083BCD56DAB64CB984A4D4D /* NotchyTimerService.swift */; };
+		5AADCA12EB018BA5FA7B2AF4 /* SpotifyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6426D143626528C37961CD /* SpotifyModule.swift */; };
+		7B56D66E7F06FDBB74853ED1 /* NotchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F02825BEB6E59490D7C834 /* NotchWindowController.swift */; };
+		7EF6AC6D78B16953E02383EB /* TimerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE275F7551DB9F67873DBEF /* TimerViews.swift */; };
+		80387A92E0DE0B92E1F8D5EA /* BatteryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0372756C153FC593488586E2 /* BatteryViews.swift */; };
+		81D808981E6F00B4B11448A8 /* LockIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3202398438672B35D95DF0 /* LockIndicatorView.swift */; };
+		838209AB2DA26AF0DE50BECD /* MediaRemoteAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09EABE4DE912ECC209D52B62 /* MediaRemoteAdapter.framework */; };
+		8ACE73298C0D1D26353D4787 /* BatteryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60179BE7CBBA4BE3FBA62D3E /* BatteryModule.swift */; };
+		A15B08F6C51C65D1E26C82D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CF1FECFE705ABF8F609ACA /* Assets.xcassets */; };
+		A629B75F2A635D64FBD91CF3 /* NotchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D8D98812C81C5F7B3EE445 /* NotchModule.swift */; };
+		BAA73CB3590F6FBF74DBAF84 /* LockScreenMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B78854BA4D1F418F38D62 /* LockScreenMusicView.swift */; };
+		BABEC7EC9E9D95CAAA8289F4 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A8EA9DCE05C06215E28B9E /* MenuBarController.swift */; };
+		BB393FE050BB5BD964781868 /* DemoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B471E511882296FD95365 /* DemoModule.swift */; };
+		C5398B0A5892CC92C0F53B8D /* NotchPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D349C42A883872301146239 /* NotchPanel.swift */; };
+		D6ABDA03B611F754C70A0FB1 /* LockScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E46E5A05B36F94C9D6EC8C /* LockScreenController.swift */; };
+		DA0ACB47B2B06181E92F70A8 /* NotchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C8231ED828120BB8B31E0 /* NotchViewModel.swift */; };
+		E3D703F676417F8EA5D77DD0 /* SkyLightBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE445323E59218C7C5CDB0D /* SkyLightBridge.swift */; };
+		E6E040615EC60940A569B372 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78708CFCD82E0049CC29459D /* CalendarService.swift */; };
+		E744F88F7A098A06449E1BCD /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC367589B77F1503DC0364A /* SpotifyService.swift */; };
+		E83D4E2954048F9057E6AD3A /* NotchGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A7D5C74DFC4D0544DB2354 /* NotchGeometry.swift */; };
+		EF1922C6A42280E06F9F7E98 /* MediaRemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0675DBD999856FA4FF20F6 /* MediaRemoteClient.swift */; };
+		F22FD443C413AE6C46788F4B /* NowPlayingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E77275D613599D88C0E47F0 /* NowPlayingModel.swift */; };
+		F7C23DA89C7BD72EAD5DAAB5 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3862B58EFBCCCE48DBC7F9D /* BatteryService.swift */; };
+		FA73D5BF3660DD5C989C63EA /* TimerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA10E8CC908F07F68678562 /* TimerModule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5505F451013AD02050EE2D17 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				838209AB2DA26AF0DE50BECD /* MediaRemoteAdapter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		014C8231ED828120BB8B31E0 /* NotchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchViewModel.swift; sourceTree = "<group>"; };
+		0372756C153FC593488586E2 /* BatteryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryViews.swift; sourceTree = "<group>"; };
+		043856011554859DA1F0A723 /* NowPlayingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViews.swift; sourceTree = "<group>"; };
+		09EABE4DE912ECC209D52B62 /* MediaRemoteAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaRemoteAdapter.framework; sourceTree = "<group>"; };
+		0AE275F7551DB9F67873DBEF /* TimerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViews.swift; sourceTree = "<group>"; };
+		18E46E5A05B36F94C9D6EC8C /* LockScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenController.swift; sourceTree = "<group>"; };
+		1B6C58EA3D10C830D197CE21 /* mediaremote-adapter.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = "mediaremote-adapter.pl"; sourceTree = "<group>"; };
+		1D3202398438672B35D95DF0 /* LockIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockIndicatorView.swift; sourceTree = "<group>"; };
+		20CF1FECFE705ABF8F609ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A27399F0C16B05551598DF9 /* Notchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notchy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40AE324F16C1D3B1F6259F26 /* ArtworkColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkColor.swift; sourceTree = "<group>"; };
+		44D8D98812C81C5F7B3EE445 /* NotchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchModule.swift; sourceTree = "<group>"; };
+		47F02825BEB6E59490D7C834 /* NotchWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWindowController.swift; sourceTree = "<group>"; };
+		4E77275D613599D88C0E47F0 /* NowPlayingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingModel.swift; sourceTree = "<group>"; };
+		4FC367589B77F1503DC0364A /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		523B471E511882296FD95365 /* DemoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModule.swift; sourceTree = "<group>"; };
+		5BE445323E59218C7C5CDB0D /* SkyLightBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyLightBridge.swift; sourceTree = "<group>"; };
+		5C6426D143626528C37961CD /* SpotifyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyModule.swift; sourceTree = "<group>"; };
+		60179BE7CBBA4BE3FBA62D3E /* BatteryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryModule.swift; sourceTree = "<group>"; };
+		6194D570163969EA0117B21C /* NotchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchRootView.swift; sourceTree = "<group>"; };
+		6C0675DBD999856FA4FF20F6 /* MediaRemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRemoteClient.swift; sourceTree = "<group>"; };
+		6C8BFB0B788C4B36BAA19E7D /* NotchShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchShape.swift; sourceTree = "<group>"; };
+		6D349C42A883872301146239 /* NotchPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchPanel.swift; sourceTree = "<group>"; };
+		7454E53D896A817BD6A2BBE2 /* CalendarModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModule.swift; sourceTree = "<group>"; };
+		78708CFCD82E0049CC29459D /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		7C524929A7542DD93D4D1F69 /* CalendarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViews.swift; sourceTree = "<group>"; };
+		9E4F262566E14436B29B6D4C /* ModuleRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleRegistry.swift; sourceTree = "<group>"; };
+		A0A7D5C74DFC4D0544DB2354 /* NotchGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchGeometry.swift; sourceTree = "<group>"; };
+		A3862B58EFBCCCE48DBC7F9D /* BatteryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryService.swift; sourceTree = "<group>"; };
+		AEA10E8CC908F07F68678562 /* TimerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModule.swift; sourceTree = "<group>"; };
+		B72B78854BA4D1F418F38D62 /* LockScreenMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenMusicView.swift; sourceTree = "<group>"; };
+		BE7FB5D27200290148BD6E82 /* NowPlayingModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingModule.swift; sourceTree = "<group>"; };
+		C083BCD56DAB64CB984A4D4D /* NotchyTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchyTimerService.swift; sourceTree = "<group>"; };
+		C24E52FE44FD9F0ED7CE9157 /* SpotifyViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyViews.swift; sourceTree = "<group>"; };
+		C4A8EA9DCE05C06215E28B9E /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		E6F13CDC195ACE550AB8EF02 /* NotchyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchyApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		17D58468A6DA483376E521A3 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				C083BCD56DAB64CB984A4D4D /* NotchyTimerService.swift */,
+				AEA10E8CC908F07F68678562 /* TimerModule.swift */,
+				0AE275F7551DB9F67873DBEF /* TimerViews.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		1E602BF86FB6C687744FA081 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4A8EA9DCE05C06215E28B9E /* MenuBarController.swift */,
+				E6F13CDC195ACE550AB8EF02 /* NotchyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2193813A684D581EE3F3BC42 /* Notch */ = {
+			isa = PBXGroup;
+			children = (
+				A0A7D5C74DFC4D0544DB2354 /* NotchGeometry.swift */,
+				6D349C42A883872301146239 /* NotchPanel.swift */,
+				6194D570163969EA0117B21C /* NotchRootView.swift */,
+				6C8BFB0B788C4B36BAA19E7D /* NotchShape.swift */,
+				014C8231ED828120BB8B31E0 /* NotchViewModel.swift */,
+				47F02825BEB6E59490D7C834 /* NotchWindowController.swift */,
+			);
+			path = Notch;
+			sourceTree = "<group>";
+		};
+		24B8672F28D09765AF07B071 /* MediaRemote */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C58EA3D10C830D197CE21 /* mediaremote-adapter.pl */,
+				09EABE4DE912ECC209D52B62 /* MediaRemoteAdapter.framework */,
+			);
+			path = MediaRemote;
+			sourceTree = "<group>";
+		};
+		2ADA50C611AD3FB3E2051791 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20CF1FECFE705ABF8F609ACA /* Assets.xcassets */,
+				24B8672F28D09765AF07B071 /* MediaRemote */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3CFED73EEF67569539C9AB6E /* LockScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1D3202398438672B35D95DF0 /* LockIndicatorView.swift */,
+				18E46E5A05B36F94C9D6EC8C /* LockScreenController.swift */,
+				B72B78854BA4D1F418F38D62 /* LockScreenMusicView.swift */,
+				5BE445323E59218C7C5CDB0D /* SkyLightBridge.swift */,
+			);
+			path = LockScreen;
+			sourceTree = "<group>";
+		};
+		3E0F5DA24D57A57D34CE808D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9E4F262566E14436B29B6D4C /* ModuleRegistry.swift */,
+				44D8D98812C81C5F7B3EE445 /* NotchModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		8340FE5035441BB230BBEA85 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				523B471E511882296FD95365 /* DemoModule.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		88CB2A842BDBA58B83008D4B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A420D6EBF2B16F179F757D86 /* Battery */,
+				D6E6129CDB5F73DD1413FD72 /* Calendar */,
+				8340FE5035441BB230BBEA85 /* Demo */,
+				B9DED88D40D60D0444170DCD /* NowPlaying */,
+				F599F99DB840CF1D63880B94 /* Spotify */,
+				17D58468A6DA483376E521A3 /* Timer */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A13FABD741219299261761DC /* Notchy */ = {
+			isa = PBXGroup;
+			children = (
+				1E602BF86FB6C687744FA081 /* App */,
+				3CFED73EEF67569539C9AB6E /* LockScreen */,
+				3E0F5DA24D57A57D34CE808D /* Module */,
+				88CB2A842BDBA58B83008D4B /* Modules */,
+				2193813A684D581EE3F3BC42 /* Notch */,
+				2ADA50C611AD3FB3E2051791 /* Resources */,
+			);
+			path = Notchy;
+			sourceTree = "<group>";
+		};
+		A420D6EBF2B16F179F757D86 /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				60179BE7CBBA4BE3FBA62D3E /* BatteryModule.swift */,
+				A3862B58EFBCCCE48DBC7F9D /* BatteryService.swift */,
+				0372756C153FC593488586E2 /* BatteryViews.swift */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		B3AC2667286CC3E381EC4520 = {
+			isa = PBXGroup;
+			children = (
+				A13FABD741219299261761DC /* Notchy */,
+				DC9A645B529A200D5DD6C9D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9DED88D40D60D0444170DCD /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				6C0675DBD999856FA4FF20F6 /* MediaRemoteClient.swift */,
+				4E77275D613599D88C0E47F0 /* NowPlayingModel.swift */,
+				BE7FB5D27200290148BD6E82 /* NowPlayingModule.swift */,
+				043856011554859DA1F0A723 /* NowPlayingViews.swift */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		D6E6129CDB5F73DD1413FD72 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				7454E53D896A817BD6A2BBE2 /* CalendarModule.swift */,
+				78708CFCD82E0049CC29459D /* CalendarService.swift */,
+				7C524929A7542DD93D4D1F69 /* CalendarViews.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DC9A645B529A200D5DD6C9D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A27399F0C16B05551598DF9 /* Notchy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F599F99DB840CF1D63880B94 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				40AE324F16C1D3B1F6259F26 /* ArtworkColor.swift */,
+				5C6426D143626528C37961CD /* SpotifyModule.swift */,
+				4FC367589B77F1503DC0364A /* SpotifyService.swift */,
+				C24E52FE44FD9F0ED7CE9157 /* SpotifyViews.swift */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A8251456383764DDDD7693B /* Notchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AB07D6BCD80C799B426D1D /* Build configuration list for PBXNativeTarget "Notchy" */;
+			buildPhases = (
+				CB698B097666DA24EA8DD260 /* Sources */,
+				11FA6346DA1A737CC5AD49EB /* Resources */,
+				5505F451013AD02050EE2D17 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notchy;
+			packageProductDependencies = (
+			);
+			productName = Notchy;
+			productReference = 2A27399F0C16B05551598DF9 /* Notchy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BF116DDD3CDA0BF72E9B072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5A8251456383764DDDD7693B = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F244AE196A3E745C40F902F1 /* Build configuration list for PBXProject "Notchy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B3AC2667286CC3E381EC4520;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DC9A645B529A200D5DD6C9D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A8251456383764DDDD7693B /* Notchy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11FA6346DA1A737CC5AD49EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15B08F6C51C65D1E26C82D5 /* Assets.xcassets in Resources */,
+				2D532556CE3B2EC07469A52B /* mediaremote-adapter.pl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB698B097666DA24EA8DD260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246765F2313C3EFFDFE06555 /* ArtworkColor.swift in Sources */,
+				8ACE73298C0D1D26353D4787 /* BatteryModule.swift in Sources */,
+				F7C23DA89C7BD72EAD5DAAB5 /* BatteryService.swift in Sources */,
+				80387A92E0DE0B92E1F8D5EA /* BatteryViews.swift in Sources */,
+				4E3F15C84C1079A831409128 /* CalendarModule.swift in Sources */,
+				E6E040615EC60940A569B372 /* CalendarService.swift in Sources */,
+				351738D11F4B26E921B16798 /* CalendarViews.swift in Sources */,
+				BB393FE050BB5BD964781868 /* DemoModule.swift in Sources */,
+				81D808981E6F00B4B11448A8 /* LockIndicatorView.swift in Sources */,
+				D6ABDA03B611F754C70A0FB1 /* LockScreenController.swift in Sources */,
+				BAA73CB3590F6FBF74DBAF84 /* LockScreenMusicView.swift in Sources */,
+				EF1922C6A42280E06F9F7E98 /* MediaRemoteClient.swift in Sources */,
+				BABEC7EC9E9D95CAAA8289F4 /* MenuBarController.swift in Sources */,
+				0085910675202C5A727AD966 /* ModuleRegistry.swift in Sources */,
+				E83D4E2954048F9057E6AD3A /* NotchGeometry.swift in Sources */,
+				A629B75F2A635D64FBD91CF3 /* NotchModule.swift in Sources */,
+				C5398B0A5892CC92C0F53B8D /* NotchPanel.swift in Sources */,
+				15F7E2CA4C59D374E1BF08D8 /* NotchRootView.swift in Sources */,
+				045F87F43B502C9443EF4BE9 /* NotchShape.swift in Sources */,
+				DA0ACB47B2B06181E92F70A8 /* NotchViewModel.swift in Sources */,
+				7B56D66E7F06FDBB74853ED1 /* NotchWindowController.swift in Sources */,
+				50AA6EA67F605F090F4A80FA /* NotchyApp.swift in Sources */,
+				5957A6B751AB032EA3ADC3FA /* NotchyTimerService.swift in Sources */,
+				F22FD443C413AE6C46788F4B /* NowPlayingModel.swift in Sources */,
+				396F8283E16FEC8D6DB8EB35 /* NowPlayingModule.swift in Sources */,
+				24BC0814F65576CC843810B3 /* NowPlayingViews.swift in Sources */,
+				E3D703F676417F8EA5D77DD0 /* SkyLightBridge.swift in Sources */,
+				5AADCA12EB018BA5FA7B2AF4 /* SpotifyModule.swift in Sources */,
+				E744F88F7A098A06449E1BCD /* SpotifyService.swift in Sources */,
+				1BE55FC060465F8AF31AAC1E /* SpotifyViews.swift in Sources */,
+				FA73D5BF3660DD5C989C63EA /* TimerModule.swift in Sources */,
+				7EF6AC6D78B16953E02383EB /* TimerViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3EA1FE33C94E9824DF88EBA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8DADAB3BDE7C3BB79D9E2EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notchy/Resources/Notchy.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Notchy/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notchy.Notchy;
+				PRODUCT_NAME = Notchy;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D304DE2549AA1B818A48A5C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E4C1AB87203FA909E24B65DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notchy/Resources/Notchy.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Notchy/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notchy.Notchy;
+				PRODUCT_NAME = Notchy;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5AB07D6BCD80C799B426D1D /* Build configuration list for PBXNativeTarget "Notchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C1AB87203FA909E24B65DC /* Debug */,
+				8DADAB3BDE7C3BB79D9E2EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F244AE196A3E745C40F902F1 /* Build configuration list for PBXProject "Notchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EA1FE33C94E9824DF88EBA1 /* Debug */,
+				D304DE2549AA1B818A48A5C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BF116DDD3CDA0BF72E9B072 /* Project object */;
+}
