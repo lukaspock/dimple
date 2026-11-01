@@ -32,7 +32,7 @@ struct LockScreenMusicView: View {
     @ObservedObject var model: LockMusicModel
 
     var body: some View {
-        MediaCardContent(service: service, artwork: artwork)
+        MediaCardContent(service: service, artwork: artwork, allowsActivate: false)
             .frame(width: Self.size.width, height: Self.size.height)
             .background(ZStack { CardBlur(radius: 36); Color.black.opacity(0.28) })
             .clipShape(RoundedRectangle(cornerRadius: 36, style: .continuous))

@@ -6,7 +6,7 @@ enum TimerStyle {
     static let fade = Animation.easeOut(duration: 0.2)
 
     static func format(_ t: TimeInterval) -> String {
-        let s = Int(max(t, 0).rounded(.up))
+        let s = t.isFinite ? Int(min(max(t, 0), 24 * 3600).rounded(.up)) : 0
         return s >= 3600 ? String(format: "%d:%02d:%02d", s / 3600, s % 3600 / 60, s % 60)
                          : String(format: "%d:%02d", s / 60, s % 60)
     }

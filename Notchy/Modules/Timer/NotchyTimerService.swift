@@ -51,8 +51,12 @@ final class NotchyTimerService: ObservableObject {
 
     // MARK: API
 
+    /// Upper bound for any timer, also guards against inf/NaN coming in through the URL scheme.
+    static let maxDuration: TimeInterval = 24 * 3600
+
     func start(duration: TimeInterval) {
-        guard duration > 0 else { return }
+        guard duration.isFinite, duration > 0 else { return }
+        let duration = min(duration, Self.maxDuration)
         lastDuration = duration
         total = duration
         mode = .timer
@@ -139,7 +143,7 @@ final class NotchyTimerService: ObservableObject {
         }
         if q("mode")?.lowercased() == "stopwatch" || q("stopwatch") != nil { startStopwatch(); return true }
         let secs = (q("minutes").flatMap(Double.init) ?? 0) * 60 + (q("seconds").flatMap(Double.init) ?? 0)
-        start(duration: secs > 0 ? secs : lastDuration)
+        start(duration: secs.isFinite && secs > 0 ? min(secs, Self.maxDuration) : lastDuration)
         return true
     }
 

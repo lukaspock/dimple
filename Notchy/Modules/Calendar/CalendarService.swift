@@ -110,7 +110,7 @@ final class CalendarService: ObservableObject {
         for t in texts.compactMap({ $0 }) {
             let r = NSRange(t.startIndex..., in: t)
             for m in det.matches(in: t, range: r) {
-                if let u = m.url, let h = u.host?.lowercased(), hosts.contains(where: { h == $0 || h.hasSuffix("." + $0) }) { return u }
+                if let u = m.url, u.scheme?.lowercased() == "https", let h = u.host?.lowercased(), hosts.contains(where: { h == $0 || h.hasSuffix("." + $0) }) { return u }
             }
         }
         return nil

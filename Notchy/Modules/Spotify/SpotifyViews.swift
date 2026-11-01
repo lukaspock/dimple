@@ -178,6 +178,8 @@ struct MediaCardContent: View {
     static let size = CGSize(width: 360, height: 142)
     @ObservedObject var service: SpotifyService
     @ObservedObject var artwork: ArtworkLoader
+    /// False on the lock screen: cover and device icon must not launch or focus apps while locked.
+    var allowsActivate = true
     @State private var seekFraction: Double?
 
     var body: some View {
@@ -194,7 +196,7 @@ struct MediaCardContent: View {
 
     private func header(_ s: SpotifyState) -> some View {
         HStack(alignment: .center, spacing: 14) {
-            Button { service.activate() } label: { CoverView(artwork: artwork, size: 48, radius: 10) }
+            Button { if allowsActivate { service.activate() } } label: { CoverView(artwork: artwork, size: 48, radius: 10) }
                 .buttonStyle(PressScale())
             ZStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 1) {
@@ -253,7 +255,7 @@ struct MediaCardContent: View {
                 Image(systemName: "forward.fill").font(.system(size: 20)).frame(width: 44, height: 44).contentShape(Rectangle())
             }
             Spacer(minLength: 0)
-            Button { service.activate() } label: {
+            Button { if allowsActivate { service.activate() } } label: {
                 Image(systemName: "laptopcomputer").font(.system(size: 17))
                     .foregroundStyle(.white.opacity(0.35))
                     .frame(width: 44, height: 44, alignment: .trailing).contentShape(Rectangle())
