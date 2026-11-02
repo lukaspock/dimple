@@ -2,7 +2,7 @@
 import SwiftUI
 import Combine
 
-/// Debug-only module (NOTCHY_DEMO=1; =2 adds a second one): always active, publishes a notice every 10 s, accepts drops.
+/// Debug-only module (DIMPLE_DEMO=1; =2 adds a second one): always active, publishes a notice every 10 s, accepts drops.
 /// Exists to test notices, the switcher and drops next to Spotify.
 @MainActor
 final class DemoModule: NotchModule, ObservableObject {

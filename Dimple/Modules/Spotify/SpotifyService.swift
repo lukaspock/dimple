@@ -35,7 +35,7 @@ final class SpotifyService: ObservableObject {
 
     @Published private(set) var state = SpotifyState()
 
-    private let queue = DispatchQueue(label: "notchy.spotify.applescript")
+    private let queue = DispatchQueue(label: "dimple.spotify.applescript")
     private var timer: Timer?
     private var timerInterval: TimeInterval = 0
     private var observers: [(center: NotificationCenter, token: NSObjectProtocol)] = []

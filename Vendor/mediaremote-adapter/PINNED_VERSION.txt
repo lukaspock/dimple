@@ -2,4 +2,4 @@ Upstream: https://github.com/ungive/mediaremote-adapter
 Commit:   0e82bf1c44ec39554fbfc402ec88a48c6ae2a0fd (v0.7.7-8-g0e82bf1, committed 2026-10-17)
 Vendored: 2026-11-01 via git archive (no .git). Unmodified.
 Build:    cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build  (universal arm64+x86_64, ad-hoc signed)
-Output copied to Notchy/Resources/MediaRemote/ (framework) + bin/mediaremote-adapter.pl
+Output copied to Dimple/Resources/MediaRemote/ (framework) + bin/mediaremote-adapter.pl

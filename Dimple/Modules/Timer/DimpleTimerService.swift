@@ -2,11 +2,11 @@ import SwiftUI
 import AppKit
 
 /// State machine for the countdown timer / stopwatch. Source of truth for `TimerModule`; usable from anywhere:
-/// `NotchyTimerService.shared.start(duration: 600)`, `.startStopwatch()`, `.pause()`, `.reset()`.
+/// `DimpleTimerService.shared.start(duration: 600)`, `.startStopwatch()`, `.pause()`, `.reset()`.
 /// Time is derived from dates (no per-tick state), so views only need a TimelineView while running.
 @MainActor
-final class NotchyTimerService: ObservableObject {
-    static let shared = NotchyTimerService()
+final class DimpleTimerService: ObservableObject {
+    static let shared = DimpleTimerService()
 
     enum Mode { case timer, stopwatch }
     enum Phase { case idle, running, paused }
@@ -124,11 +124,11 @@ final class NotchyTimerService: ObservableObject {
         }
     }
 
-    // MARK: URL scheme  notchy://timer?minutes=10 | seconds=90 | mode=stopwatch | action=pause|resume|toggle|reset
+    // MARK: URL scheme  dimple://timer?minutes=10 | seconds=90 | mode=stopwatch | action=pause|resume|toggle|reset
 
     @discardableResult
     func handle(url: URL) -> Bool {
-        guard url.scheme?.lowercased() == "notchy", url.host?.lowercased() == "timer" else { return false }
+        guard url.scheme?.lowercased() == "dimple", url.host?.lowercased() == "timer" else { return false }
         let items = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems ?? []
         func q(_ n: String) -> String? { items.first { $0.name == n }?.value }
         if let a = q("action")?.lowercased() {
@@ -179,7 +179,7 @@ final class NotchyTimerService: ObservableObject {
     }
 }
 
-/// Receives `notchy://` URLs via the Apple Event handler, so no AppDelegate change is needed
+/// Receives `dimple://` URLs via the Apple Event handler, so no AppDelegate change is needed
 /// (requires the CFBundleURLTypes entry in Info.plist).
 final class TimerURLHandler: NSObject {
     static let shared = TimerURLHandler()
@@ -194,6 +194,6 @@ final class TimerURLHandler: NSObject {
 
     @objc private func handle(_ event: NSAppleEventDescriptor, reply: NSAppleEventDescriptor) {
         guard let s = event.paramDescriptor(forKeyword: 0x2D2D2D2D)?.stringValue, let url = URL(string: s) else { return } // '----'
-        DispatchQueue.main.async { MainActor.assumeIsolated { _ = NotchyTimerService.shared.handle(url: url) } }
+        DispatchQueue.main.async { MainActor.assumeIsolated { _ = DimpleTimerService.shared.handle(url: url) } }
     }
 }

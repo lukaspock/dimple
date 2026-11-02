@@ -15,7 +15,7 @@ it is built by CMake but NOT shipped in the app).
   `/System/Library/PrivateFrameworks/MediaRemote.framework` via `CFBundle` and resolves 11 `MRMediaRemote*` functions
   (get now-playing info/PID/client/isPlaying, send command, set elapsed time/shuffle/repeat/speed, register for notifications).
 - The only subprocess spawn is `NSTask` in `src/adapter/test.m`, used by the `test` function with a caller-supplied
-  `MEDIAREMOTEADAPTER_TEST_CLIENT_PATH`. Notchy never calls `test` with a client path and does not ship the test client.
+  `MEDIAREMOTEADAPTER_TEST_CLIENT_PATH`. Dimple never calls `test` with a client path and does not ship the test client.
 
 ## What it reads
 - Now Playing metadata (title, artist, album, duration, elapsed, artwork bytes, bundle ids, PID) via MediaRemote and
@@ -30,5 +30,5 @@ it is built by CMake but NOT shipped in the app).
 
 ## Other notes
 - No obfuscated code, no binary blobs in the repo. Build is plain CMake, with an ad-hoc `codesign` post-build step.
-- It works because `/usr/bin/perl` is an Apple platform binary, which MediaRemote (macOS 15.4+) still entitles. It relies on a private API, so a future macOS update can break it; Notchy treats it as optional (`isAvailable`).
+- It works because `/usr/bin/perl` is an Apple platform binary, which MediaRemote (macOS 15.4+) still entitles. It relies on a private API, so a future macOS update can break it; Dimple treats it as optional (`isAvailable`).
 - Control commands (`send`, `seek`, `shuffle`, `repeat`, `speed`) act on the *system* now-playing app.

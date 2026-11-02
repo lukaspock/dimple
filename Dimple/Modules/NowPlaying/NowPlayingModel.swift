@@ -19,12 +19,12 @@ final class NowPlayingModel: ObservableObject {
     private var artTask: Task<Void, Never>?
     private var iconBundle: String?
     private static var iconCache: [String: NSImage] = [:]
-    private let log = Logger(subsystem: "app.notchy", category: "NowPlaying")
+    private let log = Logger(subsystem: "app.dimple", category: "NowPlaying")
     private var availabilityCheck: Task<Void, Never>?
 
     #if DEBUG
-    /// NOTCHY_NOWPLAYING_DEBUG: 1 = no artwork, 2 = generated artwork + shuffle, 3 = live stream (no duration).
-    private let debugMode: Int? = ProcessInfo.processInfo.environment["NOTCHY_NOWPLAYING_DEBUG"].flatMap { Int($0) }
+    /// DIMPLE_NOWPLAYING_DEBUG: 1 = no artwork, 2 = generated artwork + shuffle, 3 = live stream (no duration).
+    private let debugMode: Int? = ProcessInfo.processInfo.environment["DIMPLE_NOWPLAYING_DEBUG"].flatMap { Int($0) }
     #endif
 
     var playing: Bool { state?.playing == true && !(state?.displayTitle.isEmpty ?? true) }

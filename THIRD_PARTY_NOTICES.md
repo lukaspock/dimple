@@ -7,7 +7,7 @@
 - Copyright (c) 2025, Jonas van den Berg and contributors
 - License: BSD 3-Clause
 - Use: bundled, unmodified, to read and control the system-wide "Now Playing" session on macOS 15.4+.
-  Source: `Vendor/mediaremote-adapter/`; built framework and script: `Notchy/Resources/MediaRemote/`.
+  Source: `Vendor/mediaremote-adapter/`; built framework and script: `Dimple/Resources/MediaRemote/`.
 
 BSD 3-Clause License
 

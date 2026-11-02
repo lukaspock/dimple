@@ -1,14 +1,14 @@
-# Notchy – Architecture (contract between work packages)
+# Dimple – Architecture (contract between work packages)
 
-Project root: this repository (Xcode project `Notchy.xcodeproj` generated from `project.yml`, target `Notchy`, sources in `Notchy/`)
+Project root: this repository (Xcode project `Dimple.xcodeproj` generated from `project.yml`, target `Dimple`, sources in `Dimple/`)
 Swift 5.9 language mode, macOS 14 deployment target, LSUIElement, code/comments/names in English.
 
-## Folder layout (inside Notchy/Notchy/)
-- App/            NotchyApp (AppDelegate-based), MenuBarController (status item: "Beenden", "Beim Login starten" via SMAppService)
+## Folder layout (inside Dimple/)
+- App/            DimpleApp (AppDelegate-based), MenuBarController (status item: "Beenden", "Beim Login starten" via SMAppService)
 - Notch/          NotchPanel, NotchWindowController, NotchGeometry, NotchShape, NotchRootView, NotchViewModel
 - Module/         NotchModule.swift (FIXED CONTRACT, do not change signatures), ModuleRegistry.swift
 - Modules/Spotify/ SpotifyModule, SpotifyService (AppleScript), SpotifyCompactViews, SpotifyExpandedView, EqualizerView, ArtworkColor
-- Resources: Info.plist, Notchy.entitlements, Assets.xcassets
+- Resources: Info.plist, Dimple.entitlements, Assets.xcassets
 
 ## Contract
 `Module/NotchModule.swift` defines the protocol. Core (Notch/, ModuleRegistry) only talks to modules through it.

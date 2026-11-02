@@ -7,7 +7,7 @@ import os
 /// SkyLight space (see SkyLightBridge) on lock and torn down on unlock.
 @MainActor
 final class LockScreenController {
-    private static let log = Logger(subsystem: "com.notchy.Notchy", category: "LockScreen")
+    private static let log = Logger(subsystem: "com.dimple.Dimple", category: "LockScreen")
 
     private let spotify: SpotifyModule?
     private let bridge = SkyLightBridge()
@@ -47,7 +47,7 @@ final class LockScreenController {
         musicModel.visible = false
         let ind = makeIndicator(geo), music = makeMusic(geo)
         indicatorPanel = ind; musicPanel = music
-        for p in [ind, music].compactMap({ $0 }) { p.orderFrontRegardless(); if ProcessInfo.processInfo.environment["NOTCHY_LOCK_NOSPACE"] == nil { bridge.add(p) } }
+        for p in [ind, music].compactMap({ $0 }) { p.orderFrontRegardless(); if ProcessInfo.processInfo.environment["DIMPLE_LOCK_NOSPACE"] == nil { bridge.add(p) } }
         NSLog("[Lock] locked: %@ ind=%@ vis=%d music=%@", bridge.report, NSStringFromRect(ind.frame), ind.isVisible, music.map { NSStringFromRect($0.frame) } ?? "nil")
 
         DispatchQueue.main.async { self.indicatorModel.expanded = true }

@@ -12,7 +12,7 @@ final class SkyLightBridge {
     private typealias SpaceAddWindows = @convention(c) (Int32, Int32, CFArray, Int32) -> Int32
     private typealias SpaceDestroy = @convention(c) (Int32, Int32) -> Int32
 
-    private static let log = Logger(subsystem: "com.notchy.Notchy", category: "SkyLight")
+    private static let log = Logger(subsystem: "com.dimple.Dimple", category: "SkyLight")
 
     private let connection: Int32
     private let create: SpaceCreate

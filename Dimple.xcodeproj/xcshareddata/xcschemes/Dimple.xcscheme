@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A8251456383764DDDD7693B"
-               BuildableName = "Notchy.app"
-               BlueprintName = "Notchy"
-               ReferencedContainer = "container:Notchy.xcodeproj">
+               BlueprintIdentifier = "729A2B22360F1CBD2A0822AE"
+               BuildableName = "Dimple.app"
+               BlueprintName = "Dimple"
+               ReferencedContainer = "container:Dimple.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A8251456383764DDDD7693B"
-            BuildableName = "Notchy.app"
-            BlueprintName = "Notchy"
-            ReferencedContainer = "container:Notchy.xcodeproj">
+            BlueprintIdentifier = "729A2B22360F1CBD2A0822AE"
+            BuildableName = "Dimple.app"
+            BlueprintName = "Dimple"
+            ReferencedContainer = "container:Dimple.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A8251456383764DDDD7693B"
-            BuildableName = "Notchy.app"
-            BlueprintName = "Notchy"
-            ReferencedContainer = "container:Notchy.xcodeproj">
+            BlueprintIdentifier = "729A2B22360F1CBD2A0822AE"
+            BuildableName = "Dimple.app"
+            BlueprintName = "Dimple"
+            ReferencedContainer = "container:Dimple.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,10 +72,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A8251456383764DDDD7693B"
-            BuildableName = "Notchy.app"
-            BlueprintName = "Notchy"
-            ReferencedContainer = "container:Notchy.xcodeproj">
+            BlueprintIdentifier = "729A2B22360F1CBD2A0822AE"
+            BuildableName = "Dimple.app"
+            BlueprintName = "Dimple"
+            ReferencedContainer = "container:Dimple.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

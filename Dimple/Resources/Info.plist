@@ -23,9 +23,9 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSAppleEventsUsageDescription</key>
-	<string>Notchy steuert Spotify per AppleScript, um den aktuellen Titel anzuzeigen und die Wiedergabe zu steuern.</string>
+	<string>Dimple steuert Spotify per AppleScript, um den aktuellen Titel anzuzeigen und die Wiedergabe zu steuern.</string>
 	<key>NSCalendarsFullAccessUsageDescription</key>
-	<string>Notchy zeigt deine nächsten Termine in der Notch an.</string>
+	<string>Dimple zeigt deine nächsten Termine in der Notch an.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>CFBundleURLTypes</key>
@@ -33,7 +33,7 @@
 		<dict>
 			<key>CFBundleURLName</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			<key>CFBundleURLSchemes</key>
-			<array><string>notchy</string></array>
+			<array><string>dimple</string></array>
 		</dict>
 	</array>
 </dict>

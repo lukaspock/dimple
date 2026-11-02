@@ -30,7 +30,7 @@ final class BatteryModule: NotchModule, ObservableObject {
         service.start()
         if let now = service.read() { info = now; previous = now }
         #if DEBUG
-        if ProcessInfo.processInfo.environment["NOTCHY_BATTERY_DEBUG"] == "1" { startDebug() }
+        if ProcessInfo.processInfo.environment["DIMPLE_BATTERY_DEBUG"] == "1" { startDebug() }
         #endif
     }
 

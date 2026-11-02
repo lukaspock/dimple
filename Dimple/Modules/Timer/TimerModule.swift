@@ -13,7 +13,7 @@ final class TimerModule: NotchModule {
     let compactWingWidth: CGFloat = 54
     let expandedContentSize = CGSize(width: 320, height: 130)
 
-    let service = NotchyTimerService.shared
+    let service = DimpleTimerService.shared
     private let subject = PassthroughSubject<Void, Never>()
     private var bag = Set<AnyCancellable>()
 
@@ -45,7 +45,7 @@ final class TimerModule: NotchModule {
         service.$mode.removeDuplicates().dropFirst().sink { [weak self] _ in self?.notify() }.store(in: &bag)
         service.$doneID.removeDuplicates().sink { [weak self] _ in self?.notify() }.store(in: &bag)
         #if DEBUG
-        if ProcessInfo.processInfo.environment["NOTCHY_TIMER_DEBUG"] == "1" {
+        if ProcessInfo.processInfo.environment["DIMPLE_TIMER_DEBUG"] == "1" {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [service] in service.start(duration: 15) }
         }
         #endif

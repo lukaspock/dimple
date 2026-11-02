@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct NotchyApp: App {
+struct DimpleApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
 
     var body: some Scene {

@@ -1,13 +1,13 @@
 #!/bin/bash
 # Quick check that the bundled mediaremote-adapter can read system Now Playing on this Mac.
-# Usage: Scripts/check-nowplaying.sh [path/to/Notchy.app]   (default: bundled copy in Notchy/Resources)
+# Usage: Scripts/check-nowplaying.sh [path/to/Dimple.app]   (default: bundled copy in Dimple/Resources)
 # Read-only: runs `test`, `get` and a 4 s `stream`; never sends playback commands.
 set -u
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 if [ $# -ge 1 ]; then
   APP="$1"; PL="$APP/Contents/Resources/mediaremote-adapter.pl"; FW="$APP/Contents/Frameworks/MediaRemoteAdapter.framework"
 else
-  PL="$HERE/Notchy/Resources/MediaRemote/mediaremote-adapter.pl"; FW="$HERE/Notchy/Resources/MediaRemote/MediaRemoteAdapter.framework"
+  PL="$HERE/Dimple/Resources/MediaRemote/mediaremote-adapter.pl"; FW="$HERE/Dimple/Resources/MediaRemote/MediaRemoteAdapter.framework"
 fi
 [ -f "$PL" ] && [ -d "$FW" ] || { echo "adapter not found ($PL / $FW)"; exit 2; }
 echo "macOS $(sw_vers -productVersion)"; echo "== codesign =="; codesign --verify --strict "$FW" && echo "framework signature OK"

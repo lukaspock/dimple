@@ -14,7 +14,7 @@ enum TimerStyle {
     static func formatUp(_ t: TimeInterval) -> String { format(t.rounded(.down)) }
 }
 
-@MainActor private func text(_ s: NotchyTimerService, _ d: Date) -> String {
+@MainActor private func text(_ s: DimpleTimerService, _ d: Date) -> String {
     s.mode == .timer ? TimerStyle.format(s.value(at: d)) : TimerStyle.formatUp(s.value(at: d))
 }
 
@@ -34,7 +34,7 @@ struct TimerRing: View {
 }
 
 struct TimerCompactLeading: View {
-    @ObservedObject var service: NotchyTimerService
+    @ObservedObject var service: DimpleTimerService
     var body: some View {
         TimelineView(.animation(minimumInterval: 0.25, paused: service.phase != .running)) { ctx in
             TimerRing(progress: service.progress(at: ctx.date))
@@ -46,7 +46,7 @@ struct TimerCompactLeading: View {
 }
 
 struct TimerCompactTrailing: View {
-    @ObservedObject var service: NotchyTimerService
+    @ObservedObject var service: DimpleTimerService
     var body: some View {
         TimelineView(.animation(minimumInterval: 0.25, paused: service.phase != .running)) { ctx in
             Text(text(service, ctx.date))
@@ -62,7 +62,7 @@ struct TimerCompactTrailing: View {
 // MARK: - Expanded
 
 struct TimerExpandedView: View {
-    @ObservedObject var service: NotchyTimerService
+    @ObservedObject var service: DimpleTimerService
     @State private var resetTick = 0
     private let presets = [1, 5, 10, 25]
 
@@ -170,7 +170,7 @@ private struct ProgressCapsule: View {
 
 /// Minimal sliding segmented control: Timer | Stopwatch.
 private struct SegmentedToggle: View {
-    @Binding var selection: NotchyTimerService.Mode
+    @Binding var selection: DimpleTimerService.Mode
     @Namespace private var ns
 
     var body: some View {
@@ -182,7 +182,7 @@ private struct SegmentedToggle: View {
         .background(Capsule().fill(.white.opacity(0.08)))
     }
 
-    private func segment(_ title: String, _ mode: NotchyTimerService.Mode) -> some View {
+    private func segment(_ title: String, _ mode: DimpleTimerService.Mode) -> some View {
         let on = selection == mode
         return Button { withAnimation(TimerStyle.soft) { selection = mode } } label: {
             Text(title)

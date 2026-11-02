@@ -28,7 +28,7 @@ final class CalendarService: ObservableObject {
     private var observer: NSObjectProtocol?
 
     #if DEBUG
-    private let debugMode: Int = Int(ProcessInfo.processInfo.environment["NOTCHY_CALENDAR_DEBUG"] ?? "") ?? 0
+    private let debugMode: Int = Int(ProcessInfo.processInfo.environment["DIMPLE_CALENDAR_DEBUG"] ?? "") ?? 0
     #else
     private let debugMode = 0
     #endif

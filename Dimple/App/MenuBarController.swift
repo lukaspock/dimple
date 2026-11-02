@@ -8,7 +8,7 @@ final class MenuBarController: NSObject, NSMenuDelegate {
 
     override init() {
         super.init()
-        statusItem.button?.image = NSImage(systemSymbolName: "capsule.tophalf.filled", accessibilityDescription: "Notchy")
+        statusItem.button?.image = NSImage(systemSymbolName: "capsule.tophalf.filled", accessibilityDescription: "Dimple")
         loginItem.target = self
         let quit = NSMenuItem(title: "Beenden", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         let menu = NSMenu()
@@ -60,7 +60,7 @@ final class MenuBarController: NSObject, NSMenuDelegate {
                 try SMAppService.mainApp.register()
             }
         } catch {
-            NSLog("Notchy: login item change failed: \(error.localizedDescription)")
+            NSLog("Dimple: login item change failed: \(error.localizedDescription)")
         }
         refresh()
     }

@@ -46,7 +46,7 @@ final class ModuleRegistry: ObservableObject {
             SpotifyModule(), NowPlayingModule(), TimerModule.shared, CalendarModule(), BatteryModule(),
         ]
         #if DEBUG
-        let demo = ProcessInfo.processInfo.environment["NOTCHY_DEMO"]
+        let demo = ProcessInfo.processInfo.environment["DIMPLE_DEMO"]
         if demo == "1" || demo == "2" { list.append(DemoModule()) }
         if demo == "2" { list.append(DemoModule(id: "demo2", priority: 40, iconName: "bolt.fill")) }
         #endif
