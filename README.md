@@ -3,6 +3,10 @@
 A minimal "Dynamic Island" for the MacBook notch, written in Swift / SwiftUI / AppKit.
 The island grows out of the notch when something is happening and retracts into it when it is not.
 
+<p align="center">
+  <img src="docs/player.png" width="520" alt="Dimple expanded with the Spotify player">
+</p>
+
 > [!IMPORTANT]
 > **macOS will block Dimple the first time you open it** ("Apple could not verify Dimple.app is free of malware").
 > The app is only ad-hoc signed and not notarized by Apple, so this is expected. To open it anyway:
